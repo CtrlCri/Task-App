@@ -36,13 +36,13 @@ La API estará disponible en http://localhost:8000.
   - Crea una nueva tarea proporcionando un JSON con `subjet`, `description` y `user`.
 - **Listar Tareas**: `GET /api/tasks/`
   - Obtiene una lista de todas las tareas registradas proporcionando el token de autorización.
-- **Actualizar Tarea**: `PATCH /api/tasks/{id}/`
+- **Actualizar Tarea**: `PUT /api/tasks/{id}/`
   - Actualiza el  total o parcialmente cualquier campo de una tarea por su ID.
 - **Actualizar Tarea completada**: `PATCH /api/tasks/{id}/`
   - Actualiza el estado de una tarea por su ID.
-- **Buscar Contenido**: `PATCH /api/tasks/?search=value`
+- **Buscar Contenido**: `GET /api/tasks/?search=value`
   - Busca una palabra en el contenido de una tarea en la lista de tareas.
-- **Buscar por Fecha**: `PATCH /api/tasks/?search=date`
+- **Buscar por Fecha**: `GET /api/tasks/?search=date`
   - Busca en una fecha especifica las tareas en la lista de tareas.
 - **Eliminar Tarea**: `DELETE /api/tasks/{id}/`
   - Elimina una tarea por su ID.

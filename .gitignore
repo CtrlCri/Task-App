@@ -1,5 +1,7 @@
 venv/
-.env
+app/.env
 app/core_api/__pycache__/
 app/tasks/__pycache__/
 app/users/__pycache__/
+app/tasks/migrations/__pycache__/
+app/users/migrations/__pycache__/
